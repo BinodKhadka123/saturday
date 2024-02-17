@@ -22,5 +22,8 @@ from . import views
 
 urlpatterns = [
    
-    path('',views.index)
+   # path('',views.index),
+    
+    path('',views.JobList.as_view(), name='index'),
+    path('',views.JobDetailView.as_view(), name='detail'),
 ]
